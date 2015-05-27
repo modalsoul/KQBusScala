@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="top_bar_green">#009688</color>
+    <color name="top_bar_dark_green">#004B44</color>
+
+    <color name="main_red">#F26B7A</color>
+    <color name="sub_red">#BC6123</color>
+    <color name="main_white">#F0F2DC</color>
+    <color name="sub_white">#8EA373</color>
+    <color name="main_green">#D9EB52</color>
+    <color name="sub_green">#5E9F13</color>
+    <color name="main_blue">#8AC7DE</color>
+    <color name="sub_blue">#4B5BAF</color>
+    <color name="main_black">#87796F</color>
+    <color name="sub_black">#413725</color>
+
+    <color name="text_color">#FFFFFF</color>
+
+</resources>

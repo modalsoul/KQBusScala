@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">京急バス時刻表</string>
+
+    <!-- メニュー ダイアログ -->
+    <string name="bus_stop_dialog_message">探すバス停の名前を入力してください</string>
+    <string name="dialog_clear">クリア</string>
+
+    <!-- 運行情報タブ -->
+    <string name="three_before">３つ前の停留所</string>
+    <string name="two_before">２つ前の停留所</string>
+    <string name="one_before">１つ前の停留所</string>
+    <string name="will_arrive_at">乗車するバス停に、%1$s 到着予定</string>
+    <string name="will_terminal_at">終点に、%1$s 到着予定</string>
+    <string name="update">更新</string>
+    <string name="there_is_no_bus">近くを走っているバスはないようですね</string>
+
+    <!-- DB -->
+    <string name="db_path">/data/data/jp.modal.soul.KeikyuTimeTable/databases/</string>
+    <string name="db_name">kqbus</string>
+    <string name="db_name_asset">kqbus.db</string>
+</resources>

@@ -1,0 +1,6 @@
+android:run
+run last android:install
+last compile:run
+run
+ls
+exit

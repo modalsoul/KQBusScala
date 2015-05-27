@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+        <!-- Customize your theme here. -->
+        <item name="android:actionBarStyle">@style/CustomActionBarTheme</item>
+        <!--<item name="android:textColorPrimary">@color/main_black</item>-->
+    </style>
+    <!-- ActionBarの背景色を設定 -->
+    <style name="CustomActionBarTheme" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@color/main_red</item>
+    </style>
+</resources>

@@ -1,0 +1,9 @@
+[0m[[0minfo[0m] [0mProcessing resources[0m
+[0m[[0mdebug[0m] [0mAll libs: List()[0m
+[0m[[0mdebug[0m] [0mAll packages: List()[0m
+[0m[[0mdebug[0m] [0mpackageForR: jp.modal.soul.KeikyuTimeTable[0m
+[0m[[0mdebug[0m] [0mproguard.txt: /Users/imae/workspace/Android/KQBusScala/bin/proguard.txt[0m
+[0m[[0mdebug[0m] [0mIn modified: Set(/Users/imae/workspace/Android/KQBusScala/bin/AndroidManifest.xml)[0m
+[0m[[0mdebug[0m] [0mInRemoved: Set()[0m
+[0m[[0mdebug[0m] [0mOut checked: Set(/Users/imae/workspace/Android/KQBusScala/gen/jp/modal/soul/KeikyuTimeTable/R.java, /Users/imae/workspace/Android/KQBusScala/gen/jp/modal/soul/KeikyuTimeTable/Manifest.java)[0m
+[0m[[0mdebug[0m] [0mOut modified: Set()[0m

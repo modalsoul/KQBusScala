@@ -1,0 +1,451 @@
+[info] Updating {file:/Users/imae/workspace/Android/KQBusScala/}kqbusscala...
+[debug] :: resolving dependencies :: default#kqbusscala_2.11;0.1-SNAPSHOT
+[debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
+[debug] 	validate = true
+[debug] 	refresh = false
+[debug] resolving dependencies for configuration 'compile'
+[debug] == resolving dependencies for default#kqbusscala_2.11;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->default(compile)]
+[info] Resolving org.scala-lang#scala-library;2.11.6 ...
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@63226ca8
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.6
+[debug] 	local: revision in cache: org.scala-lang#scala-library;2.11.6
+[debug] 	found org.scala-lang#scala-library;2.11.6 in sbt-chain
+[debug] 	[2.11.6] org.scala-lang#scala-library;2.11.6
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scaloid#scaloid_2.11;3.6.1-10 [compile->default(compile)]
+[info] Resolving org.scaloid#scaloid_2.11;3.6.1-10 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scaloid#scaloid_2.11;3.6.1-10 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scaloid#scaloid_2.11;3.6.1-10
+[debug] 	local: revision in cache: org.scaloid#scaloid_2.11;3.6.1-10
+[debug] 	found org.scaloid#scaloid_2.11;3.6.1-10 in sbt-chain
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scaloid#scaloid_2.11;3.6.1-10 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scaloid#scaloid_2.11;3.6.1-10 [compile->compile]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.4 [compile->compile(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.4 [compile->master(compile)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-reflect;2.11.4 [compile->compile(*)]
+[info] Resolving org.scala-lang#scala-reflect;2.11.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.11.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.11.4
+[debug] 	local: revision in cache: org.scala-lang#scala-reflect;2.11.4
+[debug] 	found org.scala-lang#scala-reflect;2.11.4 in sbt-chain
+[debug] 	[2.11.4] org.scala-lang#scala-reflect;2.11.4
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-reflect;2.11.4 [compile->master(compile)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-reflect;2.11.4 [compile->runtime(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-reflect;2.11.4 [compile->compile]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-reflect;2.11.4 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-reflect;2.11.4 [runtime->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scaloid#scaloid_2.11;3.6.1-10 [compile->master]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.mcxiaoke.volley#library;1.0.15 [compile->default(compile)]
+[info] Resolving com.mcxiaoke.volley#library;1.0.15 ...
+[debug] sbt-chain: Checking cache for: dependency: com.mcxiaoke.volley#library;1.0.15 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: com.mcxiaoke.volley#library;1.0.15
+[debug] 	local: revision in cache: com.mcxiaoke.volley#library;1.0.15
+[debug] 	found com.mcxiaoke.volley#library;1.0.15 in sbt-chain
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.mcxiaoke.volley#library;1.0.15 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.mcxiaoke.volley#library;1.0.15 [compile->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.mcxiaoke.volley#library;1.0.15 [compile->master]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.squareup.okhttp#okhttp;2.3.0 [compile->default(compile)]
+[info] Resolving com.squareup.okhttp#okhttp;2.3.0 ...
+[debug] sbt-chain: Checking cache for: dependency: com.squareup.okhttp#okhttp;2.3.0 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: com.squareup.okhttp#okhttp;2.3.0
+[debug] 	local: revision in cache: com.squareup.okhttp#okhttp;2.3.0
+[debug] 	found com.squareup.okhttp#okhttp;2.3.0 in sbt-chain
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.squareup.okhttp#okhttp;2.3.0 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.squareup.okhttp#okhttp;2.3.0 [compile->compile]
+[debug] == resolving dependencies com.squareup.okhttp#okhttp;2.3.0->com.squareup.okio#okio;1.3.0 [compile->compile(*)]
+[info] Resolving com.squareup.okio#okio;1.3.0 ...
+[debug] sbt-chain: Checking cache for: dependency: com.squareup.okio#okio;1.3.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] sbt-chain: module revision found in cache: com.squareup.okio#okio;1.3.0
+[debug] 	local: revision in cache: com.squareup.okio#okio;1.3.0
+[debug] 	found com.squareup.okio#okio;1.3.0 in sbt-chain
+[debug] == resolving dependencies com.squareup.okhttp#okhttp;2.3.0->com.squareup.okio#okio;1.3.0 [compile->master(compile)]
+[debug] == resolving dependencies com.squareup.okhttp#okhttp;2.3.0->com.squareup.okio#okio;1.3.0 [compile->runtime(*)]
+[debug] == resolving dependencies com.squareup.okhttp#okhttp;2.3.0->com.squareup.okio#okio;1.3.0 [compile->compile]
+[debug] == resolving dependencies com.squareup.okhttp#okhttp;2.3.0->com.squareup.okio#okio;1.3.0 [runtime->runtime(*)]
+[debug] == resolving dependencies com.squareup.okhttp#okhttp;2.3.0->com.squareup.okio#okio;1.3.0 [runtime->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.squareup.okhttp#okhttp;2.3.0 [compile->master]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.jsoup#jsoup;1.8.2 [compile->default(compile)]
+[info] Resolving org.jsoup#jsoup;1.8.2 ...
+[debug] sbt-chain: Checking cache for: dependency: org.jsoup#jsoup;1.8.2 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.jsoup#jsoup;1.8.2
+[debug] 	local: revision in cache: org.jsoup#jsoup;1.8.2
+[debug] 	found org.jsoup#jsoup;1.8.2 in sbt-chain
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.jsoup#jsoup;1.8.2 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.jsoup#jsoup;1.8.2 [compile->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.jsoup#jsoup;1.8.2 [compile->master]
+[debug] resolving dependencies for configuration 'runtime'
+[debug] == resolving dependencies for default#kqbusscala_2.11;0.1-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#kqbusscala_2.11;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->default(compile)]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scaloid#scaloid_2.11;3.6.1-10 [compile->default(compile)]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scaloid#scaloid_2.11;3.6.1-10 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scaloid#scaloid_2.11;3.6.1-10 [compile->compile]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.4 [compile->compile(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.4 [compile->master(compile)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-reflect;2.11.4 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-reflect;2.11.4 [compile->master(compile)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-reflect;2.11.4 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-reflect;2.11.4 [runtime->compile]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scaloid#scaloid_2.11;3.6.1-10 [compile->master]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.mcxiaoke.volley#library;1.0.15 [compile->default(compile)]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.mcxiaoke.volley#library;1.0.15 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.mcxiaoke.volley#library;1.0.15 [compile->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.mcxiaoke.volley#library;1.0.15 [compile->master]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.squareup.okhttp#okhttp;2.3.0 [compile->default(compile)]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.squareup.okhttp#okhttp;2.3.0 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.squareup.okhttp#okhttp;2.3.0 [compile->compile]
+[debug] == resolving dependencies com.squareup.okhttp#okhttp;2.3.0->com.squareup.okio#okio;1.3.0 [compile->compile(*)]
+[debug] == resolving dependencies com.squareup.okhttp#okhttp;2.3.0->com.squareup.okio#okio;1.3.0 [compile->master(compile)]
+[debug] == resolving dependencies com.squareup.okhttp#okhttp;2.3.0->com.squareup.okio#okio;1.3.0 [runtime->runtime(*)]
+[debug] == resolving dependencies com.squareup.okhttp#okhttp;2.3.0->com.squareup.okio#okio;1.3.0 [runtime->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.squareup.okhttp#okhttp;2.3.0 [compile->master]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.jsoup#jsoup;1.8.2 [compile->default(compile)]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.jsoup#jsoup;1.8.2 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.jsoup#jsoup;1.8.2 [compile->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.jsoup#jsoup;1.8.2 [compile->master]
+[debug] resolving dependencies for configuration 'test'
+[debug] == resolving dependencies for default#kqbusscala_2.11;0.1-SNAPSHOT [test]
+[debug] == resolving dependencies for default#kqbusscala_2.11;0.1-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#kqbusscala_2.11;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->default(compile)]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scaloid#scaloid_2.11;3.6.1-10 [compile->default(compile)]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scaloid#scaloid_2.11;3.6.1-10 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scaloid#scaloid_2.11;3.6.1-10 [compile->compile]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.4 [compile->compile(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.4 [compile->master(compile)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-reflect;2.11.4 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-reflect;2.11.4 [compile->master(compile)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-reflect;2.11.4 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-reflect;2.11.4 [runtime->compile]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scaloid#scaloid_2.11;3.6.1-10 [compile->master]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.mcxiaoke.volley#library;1.0.15 [compile->default(compile)]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.mcxiaoke.volley#library;1.0.15 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.mcxiaoke.volley#library;1.0.15 [compile->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.mcxiaoke.volley#library;1.0.15 [compile->master]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.squareup.okhttp#okhttp;2.3.0 [compile->default(compile)]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.squareup.okhttp#okhttp;2.3.0 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.squareup.okhttp#okhttp;2.3.0 [compile->compile]
+[debug] == resolving dependencies com.squareup.okhttp#okhttp;2.3.0->com.squareup.okio#okio;1.3.0 [compile->compile(*)]
+[debug] == resolving dependencies com.squareup.okhttp#okhttp;2.3.0->com.squareup.okio#okio;1.3.0 [compile->master(compile)]
+[debug] == resolving dependencies com.squareup.okhttp#okhttp;2.3.0->com.squareup.okio#okio;1.3.0 [runtime->runtime(*)]
+[debug] == resolving dependencies com.squareup.okhttp#okhttp;2.3.0->com.squareup.okio#okio;1.3.0 [runtime->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.squareup.okhttp#okhttp;2.3.0 [compile->master]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.jsoup#jsoup;1.8.2 [compile->default(compile)]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.jsoup#jsoup;1.8.2 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.jsoup#jsoup;1.8.2 [compile->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.jsoup#jsoup;1.8.2 [compile->master]
+[debug] resolving dependencies for configuration 'provided'
+[debug] == resolving dependencies for default#kqbusscala_2.11;0.1-SNAPSHOT [provided]
+[debug] resolving dependencies for configuration 'optional'
+[debug] == resolving dependencies for default#kqbusscala_2.11;0.1-SNAPSHOT [optional]
+[debug] resolving dependencies for configuration 'compile-internal'
+[debug] == resolving dependencies for default#kqbusscala_2.11;0.1-SNAPSHOT [compile-internal]
+[debug] == resolving dependencies for default#kqbusscala_2.11;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->default(compile)]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scaloid#scaloid_2.11;3.6.1-10 [compile->default(compile)]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scaloid#scaloid_2.11;3.6.1-10 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scaloid#scaloid_2.11;3.6.1-10 [compile->compile]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.4 [compile->compile(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.4 [compile->master(compile)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-reflect;2.11.4 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-reflect;2.11.4 [compile->master(compile)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-reflect;2.11.4 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-reflect;2.11.4 [runtime->compile]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scaloid#scaloid_2.11;3.6.1-10 [compile->master]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.mcxiaoke.volley#library;1.0.15 [compile->default(compile)]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.mcxiaoke.volley#library;1.0.15 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.mcxiaoke.volley#library;1.0.15 [compile->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.mcxiaoke.volley#library;1.0.15 [compile->master]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.squareup.okhttp#okhttp;2.3.0 [compile->default(compile)]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.squareup.okhttp#okhttp;2.3.0 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.squareup.okhttp#okhttp;2.3.0 [compile->compile]
+[debug] == resolving dependencies com.squareup.okhttp#okhttp;2.3.0->com.squareup.okio#okio;1.3.0 [compile->compile(*)]
+[debug] == resolving dependencies com.squareup.okhttp#okhttp;2.3.0->com.squareup.okio#okio;1.3.0 [compile->master(compile)]
+[debug] == resolving dependencies com.squareup.okhttp#okhttp;2.3.0->com.squareup.okio#okio;1.3.0 [runtime->runtime(*)]
+[debug] == resolving dependencies com.squareup.okhttp#okhttp;2.3.0->com.squareup.okio#okio;1.3.0 [runtime->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.squareup.okhttp#okhttp;2.3.0 [compile->master]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.jsoup#jsoup;1.8.2 [compile->default(compile)]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.jsoup#jsoup;1.8.2 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.jsoup#jsoup;1.8.2 [compile->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.jsoup#jsoup;1.8.2 [compile->master]
+[debug] == resolving dependencies for default#kqbusscala_2.11;0.1-SNAPSHOT [optional]
+[debug] == resolving dependencies for default#kqbusscala_2.11;0.1-SNAPSHOT [provided]
+[debug] resolving dependencies for configuration 'runtime-internal'
+[debug] == resolving dependencies for default#kqbusscala_2.11;0.1-SNAPSHOT [runtime-internal]
+[debug] == resolving dependencies for default#kqbusscala_2.11;0.1-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#kqbusscala_2.11;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->default(compile)]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scaloid#scaloid_2.11;3.6.1-10 [compile->default(compile)]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scaloid#scaloid_2.11;3.6.1-10 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scaloid#scaloid_2.11;3.6.1-10 [compile->compile]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.4 [compile->compile(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.4 [compile->master(compile)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-reflect;2.11.4 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-reflect;2.11.4 [compile->master(compile)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-reflect;2.11.4 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-reflect;2.11.4 [runtime->compile]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scaloid#scaloid_2.11;3.6.1-10 [compile->master]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.mcxiaoke.volley#library;1.0.15 [compile->default(compile)]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.mcxiaoke.volley#library;1.0.15 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.mcxiaoke.volley#library;1.0.15 [compile->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.mcxiaoke.volley#library;1.0.15 [compile->master]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.squareup.okhttp#okhttp;2.3.0 [compile->default(compile)]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.squareup.okhttp#okhttp;2.3.0 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.squareup.okhttp#okhttp;2.3.0 [compile->compile]
+[debug] == resolving dependencies com.squareup.okhttp#okhttp;2.3.0->com.squareup.okio#okio;1.3.0 [compile->compile(*)]
+[debug] == resolving dependencies com.squareup.okhttp#okhttp;2.3.0->com.squareup.okio#okio;1.3.0 [compile->master(compile)]
+[debug] == resolving dependencies com.squareup.okhttp#okhttp;2.3.0->com.squareup.okio#okio;1.3.0 [runtime->runtime(*)]
+[debug] == resolving dependencies com.squareup.okhttp#okhttp;2.3.0->com.squareup.okio#okio;1.3.0 [runtime->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.squareup.okhttp#okhttp;2.3.0 [compile->master]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.jsoup#jsoup;1.8.2 [compile->default(compile)]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.jsoup#jsoup;1.8.2 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.jsoup#jsoup;1.8.2 [compile->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.jsoup#jsoup;1.8.2 [compile->master]
+[debug] == resolving dependencies for default#kqbusscala_2.11;0.1-SNAPSHOT [optional]
+[debug] resolving dependencies for configuration 'test-internal'
+[debug] == resolving dependencies for default#kqbusscala_2.11;0.1-SNAPSHOT [test-internal]
+[debug] == resolving dependencies for default#kqbusscala_2.11;0.1-SNAPSHOT [test]
+[debug] == resolving dependencies for default#kqbusscala_2.11;0.1-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#kqbusscala_2.11;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->default(compile)]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scaloid#scaloid_2.11;3.6.1-10 [compile->default(compile)]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scaloid#scaloid_2.11;3.6.1-10 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scaloid#scaloid_2.11;3.6.1-10 [compile->compile]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.4 [compile->compile(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.4 [compile->master(compile)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-reflect;2.11.4 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-reflect;2.11.4 [compile->master(compile)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-reflect;2.11.4 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scaloid#scaloid_2.11;3.6.1-10->org.scala-lang#scala-reflect;2.11.4 [runtime->compile]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scaloid#scaloid_2.11;3.6.1-10 [compile->master]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.mcxiaoke.volley#library;1.0.15 [compile->default(compile)]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.mcxiaoke.volley#library;1.0.15 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.mcxiaoke.volley#library;1.0.15 [compile->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.mcxiaoke.volley#library;1.0.15 [compile->master]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.squareup.okhttp#okhttp;2.3.0 [compile->default(compile)]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.squareup.okhttp#okhttp;2.3.0 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.squareup.okhttp#okhttp;2.3.0 [compile->compile]
+[debug] == resolving dependencies com.squareup.okhttp#okhttp;2.3.0->com.squareup.okio#okio;1.3.0 [compile->compile(*)]
+[debug] == resolving dependencies com.squareup.okhttp#okhttp;2.3.0->com.squareup.okio#okio;1.3.0 [compile->master(compile)]
+[debug] == resolving dependencies com.squareup.okhttp#okhttp;2.3.0->com.squareup.okio#okio;1.3.0 [runtime->runtime(*)]
+[debug] == resolving dependencies com.squareup.okhttp#okhttp;2.3.0->com.squareup.okio#okio;1.3.0 [runtime->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->com.squareup.okhttp#okhttp;2.3.0 [compile->master]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.jsoup#jsoup;1.8.2 [compile->default(compile)]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.jsoup#jsoup;1.8.2 [compile->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.jsoup#jsoup;1.8.2 [compile->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.jsoup#jsoup;1.8.2 [compile->master]
+[debug] == resolving dependencies for default#kqbusscala_2.11;0.1-SNAPSHOT [optional]
+[debug] == resolving dependencies for default#kqbusscala_2.11;0.1-SNAPSHOT [provided]
+[debug] resolving dependencies for configuration 'plugin'
+[debug] == resolving dependencies for default#kqbusscala_2.11;0.1-SNAPSHOT [plugin]
+[debug] resolving dependencies for configuration 'sources'
+[debug] == resolving dependencies for default#kqbusscala_2.11;0.1-SNAPSHOT [sources]
+[debug] resolving dependencies for configuration 'docs'
+[debug] == resolving dependencies for default#kqbusscala_2.11;0.1-SNAPSHOT [docs]
+[debug] resolving dependencies for configuration 'pom'
+[debug] == resolving dependencies for default#kqbusscala_2.11;0.1-SNAPSHOT [pom]
+[debug] resolving dependencies for configuration 'scala-tool'
+[debug] == resolving dependencies for default#kqbusscala_2.11;0.1-SNAPSHOT [scala-tool]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.11.6 [scala-tool->default]
+[info] Resolving org.scala-lang#scala-compiler;2.11.6 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.11.6 {scala-tool=[default, optional(default)]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.11.6
+[debug] 	local: revision in cache: org.scala-lang#scala-compiler;2.11.6
+[debug] 	found org.scala-lang#scala-compiler;2.11.6 in sbt-chain
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.11.6 [scala-tool->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.11.6 [scala-tool->compile]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->default]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->runtime]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->compile]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->master]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->optional(default)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-reflect;2.11.6 [compile->compile(*)]
+[info] Resolving org.scala-lang#scala-reflect;2.11.6 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.11.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.11.6
+[debug] 	local: revision in cache: org.scala-lang#scala-reflect;2.11.6
+[debug] 	found org.scala-lang#scala-reflect;2.11.6 in sbt-chain
+[debug] 	[2.11.6] org.scala-lang#scala-reflect;2.11.6
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-reflect;2.11.6 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-reflect;2.11.6 [compile->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-reflect;2.11.6 [compile->compile]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.6->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.6->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-xml_2.11;1.0.3 [compile->compile(*)]
+[info] Resolving org.scala-lang.modules#scala-xml_2.11;1.0.3 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-xml_2.11;1.0.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.3
+[debug] 	local: revision in cache: org.scala-lang.modules#scala-xml_2.11;1.0.3
+[debug] 	found org.scala-lang.modules#scala-xml_2.11;1.0.3 in sbt-chain
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.4 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.4 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-xml_2.11;1.0.3 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-xml_2.11;1.0.3 [compile->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-xml_2.11;1.0.3 [compile->compile]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [compile->compile(*)]
+[info] Resolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3
+[debug] 	local: revision in cache: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3
+[debug] 	found org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 in sbt-chain
+[debug] == resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.2 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.2 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [compile->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [compile->compile]
+[debug] == resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-reflect;2.11.6 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-reflect;2.11.6 [runtime->compile]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-xml_2.11;1.0.3 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-xml_2.11;1.0.3 [runtime->compile]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [runtime->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.11.6 [scala-tool->master]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.11.6 [scala-tool->optional(default)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->jline#jline;2.12.1 [optional->compile(*)]
+[info] Resolving jline#jline;2.12.1 ...
+[debug] sbt-chain: Checking cache for: dependency: jline#jline;2.12.1 {optional=[compile(*), master(compile)]}
+[debug] sbt-chain: module revision found in cache: jline#jline;2.12.1
+[debug] 	local: revision in cache: jline#jline;2.12.1
+[debug] 	found jline#jline;2.12.1 in sbt-chain
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->jline#jline;2.12.1 [optional->master(compile)]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [scala-tool->default]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [scala-tool->runtime]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [scala-tool->compile]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [scala-tool->master]
+[debug] == resolving dependencies default#kqbusscala_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [scala-tool->optional(default)]
+[debug] 	resolved ivy file produced in cache
+[debug] :: downloading artifacts ::
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.11.6!scala-library.jar
+[debug] 	[NOT REQUIRED] org.scaloid#scaloid_2.11;3.6.1-10!scaloid_2.11.jar
+[debug] 	[NOT REQUIRED] com.mcxiaoke.volley#library;1.0.15!library.jar
+[debug] 	[NOT REQUIRED] com.squareup.okhttp#okhttp;2.3.0!okhttp.jar
+[debug] 	[NOT REQUIRED] org.jsoup#jsoup;1.8.2!jsoup.jar
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.4!scala-reflect.jar
+[debug] 	[NOT REQUIRED] com.squareup.okio#okio;1.3.0!okio.jar
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.6!scala-compiler.jar
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.6!scala-reflect.jar
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.3!scala-xml_2.11.jar(bundle)
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3!scala-parser-combinators_2.11.jar(bundle)
+[debug] 	[NOT REQUIRED] jline#jline;2.12.1!jline.jar
+[debug] :: resolution report :: resolve 157ms :: artifacts dl 11ms
+[debug] 	report for default#kqbusscala_2.11;0.1-SNAPSHOT compile produced in /Users/imae/workspace/Android/KQBusScala/target/resolution-cache/reports/default-kqbusscala_2.11-compile.xml
+[debug] 	report for default#kqbusscala_2.11;0.1-SNAPSHOT runtime produced in /Users/imae/workspace/Android/KQBusScala/target/resolution-cache/reports/default-kqbusscala_2.11-runtime.xml
+[debug] 	report for default#kqbusscala_2.11;0.1-SNAPSHOT test produced in /Users/imae/workspace/Android/KQBusScala/target/resolution-cache/reports/default-kqbusscala_2.11-test.xml
+[debug] 	report for default#kqbusscala_2.11;0.1-SNAPSHOT provided produced in /Users/imae/workspace/Android/KQBusScala/target/resolution-cache/reports/default-kqbusscala_2.11-provided.xml
+[debug] 	report for default#kqbusscala_2.11;0.1-SNAPSHOT optional produced in /Users/imae/workspace/Android/KQBusScala/target/resolution-cache/reports/default-kqbusscala_2.11-optional.xml
+[debug] 	report for default#kqbusscala_2.11;0.1-SNAPSHOT compile-internal produced in /Users/imae/workspace/Android/KQBusScala/target/resolution-cache/reports/default-kqbusscala_2.11-compile-internal.xml
+[debug] 	report for default#kqbusscala_2.11;0.1-SNAPSHOT runtime-internal produced in /Users/imae/workspace/Android/KQBusScala/target/resolution-cache/reports/default-kqbusscala_2.11-runtime-internal.xml
+[debug] 	report for default#kqbusscala_2.11;0.1-SNAPSHOT test-internal produced in /Users/imae/workspace/Android/KQBusScala/target/resolution-cache/reports/default-kqbusscala_2.11-test-internal.xml
+[debug] 	report for default#kqbusscala_2.11;0.1-SNAPSHOT plugin produced in /Users/imae/workspace/Android/KQBusScala/target/resolution-cache/reports/default-kqbusscala_2.11-plugin.xml
+[debug] 	report for default#kqbusscala_2.11;0.1-SNAPSHOT sources produced in /Users/imae/workspace/Android/KQBusScala/target/resolution-cache/reports/default-kqbusscala_2.11-sources.xml
+[debug] 	report for default#kqbusscala_2.11;0.1-SNAPSHOT docs produced in /Users/imae/workspace/Android/KQBusScala/target/resolution-cache/reports/default-kqbusscala_2.11-docs.xml
+[debug] 	report for default#kqbusscala_2.11;0.1-SNAPSHOT pom produced in /Users/imae/workspace/Android/KQBusScala/target/resolution-cache/reports/default-kqbusscala_2.11-pom.xml
+[debug] 	report for default#kqbusscala_2.11;0.1-SNAPSHOT scala-tool produced in /Users/imae/workspace/Android/KQBusScala/target/resolution-cache/reports/default-kqbusscala_2.11-scala-tool.xml
+[debug] 	resolve done (157ms resolve - 11ms download)
+[info] Done updating.
