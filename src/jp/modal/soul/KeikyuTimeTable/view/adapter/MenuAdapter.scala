@@ -31,7 +31,6 @@ case class MenuAdapter()(implicit context:MenuActivity) extends BaseAdapter {
 
   private[this] def inflateViewHolder(menuItem:MenuItem):View = {
     val newConvertView:View = inflater.inflate(R.layout.menu_grid_item, null)
-    //      Holder.viewHolder.menuImage = findAViewById[ImageView, View](newConvertView, R.id.grid_item_image).get
     Holder.viewHolder.menuButton = findAViewById[Button, View](newConvertView, R.id.grid_item_button).get
     newConvertView.setTag(Holder.viewHolder)
     Holder.viewHolder.menuButton.setBackgroundResource(menuItem.colorId)

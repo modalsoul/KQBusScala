@@ -13,4 +13,4 @@
         <!--<item name="android:textColorPrimary">@color/main_black</item>-->
     </style><style name="CustomActionBarTheme" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
         <item name="android:background">@color/main_red</item>
-    </style></file></source></dataSet><mergedItems/></merger>
+    </style></file><file name="traffic_tab_row" path="/Users/imae/workspace/Android/KQBusScala/res/layout/traffic_tab_row.xml" qualifiers="" type="layout"/></source></dataSet><mergedItems/></merger>

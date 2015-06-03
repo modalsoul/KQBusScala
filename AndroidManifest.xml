@@ -21,13 +21,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="jp.modal.soul.KeikyuTimeTable.view.activity.SearchRouteActivity">
+        <activity
+                android:configChanges="orientation|screenSize"
+                android:name="jp.modal.soul.KeikyuTimeTable.view.activity.SearchRouteActivity">
         </activity>
-        <activity android:name="jp.modal.soul.KeikyuTimeTable.view.activity.SelectBusStopActivity">
+        <activity
+                android:configChanges="orientation|screenSize"
+                android:name="jp.modal.soul.KeikyuTimeTable.view.activity.SelectBusStopActivity">
         </activity>
-        <activity android:name="jp.modal.soul.KeikyuTimeTable.view.activity.TimeTableActivity">
+        <activity
+                android:configChanges="orientation|screenSize"
+                android:name="jp.modal.soul.KeikyuTimeTable.view.activity.TimeTableActivity">
         </activity>
-        <activity android:name="jp.modal.soul.KeikyuTimeTable.view.activity.SearchBusStopActivity">
+        <activity
+                android:configChanges="orientation|screenSize"
+                android:name="jp.modal.soul.KeikyuTimeTable.view.activity.SearchBusStopActivity">
         </activity>
     </application>
 </manifest>

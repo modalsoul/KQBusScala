@@ -14,6 +14,7 @@ import jp.modal.soul.KeikyuTimeTable.view.fragment.menu.{BusStopNameFragment, Hi
  * Created by imae on 2015/04/22.
  */
 case class MenuGridItems(implicit context:MenuActivity) extends LogTag {
+  private[this] val MAX_MENU_HISTORY_COUNT = 5
   /**
    * 路線から探すボタンクリックのリスナー
    */
@@ -53,10 +54,10 @@ case class MenuGridItems(implicit context:MenuActivity) extends LogTag {
     }
   }
 
-  val histories = HistoryPreference.get
-  val historyColors = Iterator(R.drawable.flat_panel_black, R.drawable.flat_panel_red, R.drawable.flat_panel_green, R.drawable.flat_panel_blue, R.drawable.flat_panel_white, R.drawable.flat_panel_black)
+  private[this] val histories = HistoryPreference.get.take(MAX_MENU_HISTORY_COUNT)
+  private[this] val historyColors = Iterator(R.drawable.flat_panel_black, R.drawable.flat_panel_red, R.drawable.flat_panel_green, R.drawable.flat_panel_blue, R.drawable.flat_panel_white, R.drawable.flat_panel_black)
 
-  def toMenuItem(history:History):MenuItem = {
+  private[this] def toMenuItem(history:History):MenuItem = {
     MenuItem(s"${history.routeName}\n${history.busStopName}",
       historyColors.next(),
       onHistoryClickListener(history.routeId, history.busStopId)

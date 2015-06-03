@@ -20,7 +20,7 @@ object History {
 
 object HistoryPreference {
   private[this] final val SP_NAME:String = "history"
-  private[this] final val MAX_HISTORY:Int = 5
+  private[this] final val MAX_HISTORY:Int = 10
   private[this] val KEY = (index:Int) => s"${SP_NAME}_$index"
 
   def get(implicit context:Context):Seq[History] = {
