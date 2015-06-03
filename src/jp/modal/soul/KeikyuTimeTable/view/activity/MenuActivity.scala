@@ -15,6 +15,8 @@ class MenuActivity extends BaseActivity {
     super.onCreate(bundle)
     setContentView(R.layout.menu_activity)
 
+    disableHomeAsUp
+
     AppMigration(getApplicationContext).check()
 
     setupTopImages

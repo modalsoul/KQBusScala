@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="@color/main_black"
+        android:background="@color/main_white"
         android:paddingTop="16dp"
         android:gravity="bottom|center_horizontal">
         <ImageView

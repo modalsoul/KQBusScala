@@ -23,8 +23,8 @@
 
     <Button
         android:id="@+id/grid_item_button"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
+        android:layout_width="176dp"
+        android:layout_height="132dp"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="4dp"
         android:textSize="16dp"/>

@@ -1,7 +1,6 @@
 package jp.modal.soul.KeikyuTimeTable.worker
 
 import android.content.{AsyncTaskLoader, Context}
-import android.util.Log
 import jp.modal.soul.KeikyuTimeTable.model.entity.{BusStop, BusStopDao, RouteDao}
 import jp.modal.soul.KeikyuTimeTable.util.LogTag
 

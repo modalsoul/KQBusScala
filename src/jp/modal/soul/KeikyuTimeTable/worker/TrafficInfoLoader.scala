@@ -4,7 +4,7 @@ import android.content.{AsyncTaskLoader, Context}
 import com.squareup.okhttp.{OkHttpClient, Request}
 import jp.modal.soul.KeikyuTimeTable.model.entity._
 
-import scala.util.Try
+import scala.util.control.Exception._
 
 /**
  * Created by imae on 2015/05/24.
@@ -18,16 +18,7 @@ case class TrafficInfoLoader(context:Context, route:Route, busStop:BusStop) exte
           .get()
           .build()
         val client = new OkHttpClient()
-
-        try {
-          val res = client.newCall(request).execute().body().string()
-          TrafficParser.getInfo(res)
-        } catch {
-          case e:Exception => Seq.empty[TrafficInfo]
-        }
-
-//        Try(client.newCall(request).execute().body().string())
-//          .map(TrafficParser.getInfo).getOrElse(Seq.empty[TrafficInfo])
+        allCatch(TrafficParser.getInfo(client.newCall(request).execute().body().string())).seq
     }
   }
 }

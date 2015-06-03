@@ -1,13 +1,12 @@
 package jp.modal.soul.KeikyuTimeTable
 
-import android.app.{Dialog, Activity}
+import android.app.{Activity, Dialog}
 import android.content.Context
 import android.content.res.AssetManager
-import android.graphics.{Color, Typeface}
 import android.graphics.drawable.ColorDrawable
-import android.util.Log
-import android.view.{WindowManager, Window, View}
-import android.widget.{EditText, TextView, Button}
+import android.graphics.{Color, Typeface}
+import android.view.{View, Window, WindowManager}
+import android.widget.{Button, TextView}
 import jp.modal.soul.KeikyuTimeTable.util.LogTag
 
 /**
@@ -41,10 +40,7 @@ package object view extends LogTag {
    * @return
    */
   def findAViewById[A <: View, B <: { def findViewById(id:Int):View }](self:B, id:Int):Option[A] = {
-    Option(self.findViewById(id)).map { v =>
-      val tv = v.asInstanceOf[A]
-      tv
-    }
+    Option(self.findViewById(id)).map(_.asInstanceOf[A])
   }
 
   def buttonById[T <: { def findViewById(id:Int):View }](self:T, id:Int)(implicit context:Context) = {

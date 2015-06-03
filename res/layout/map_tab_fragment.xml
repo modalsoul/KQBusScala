@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/map_tab"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp">
+    <Button
+            android:id="@+id/open_map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/open_map"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp"
+            android:layout_marginTop="32dp"
+            android:textSize="24dp"
+            android:textColor="@color/sub_black"
+            android:background="@drawable/flat_panel_green"/>
+    <Button
+            android:id="@+id/go_to_navi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/go_to_navi"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp"
+            android:layout_marginTop="32dp"
+            android:textSize="24dp"
+            android:textColor="@color/sub_black"
+            android:background="@drawable/flat_panel_blue"/>
+
+    <TextView
+            android:text="@string/plese_turn_on_gps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"/>
+</LinearLayout>

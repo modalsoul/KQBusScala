@@ -2,8 +2,6 @@ package jp.modal.soul.KeikyuTimeTable.model.entity
 
 import android.content.Context
 import android.database.Cursor
-import android.util.Log
-import jp.modal.soul.KeikyuTimeTable.model._
 import jp.modal.soul.KeikyuTimeTable.util.Loan
 
 import scala.collection.mutable.ArrayBuffer

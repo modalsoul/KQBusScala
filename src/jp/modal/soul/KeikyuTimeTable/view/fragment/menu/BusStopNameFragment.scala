@@ -40,7 +40,8 @@ class BusStopNameFragment extends DialogFragment with LogTag {
     dialog.getWindow.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN)
     dialog.setContentView(R.layout.bus_stop_name_fragment)
     implicit val context = getActivity()
-    val label = textById(dialog, R.id.dialog_search_label)
+    textById(dialog, R.id.dialog_search_label)
+    textById(dialog, R.id.hint)
     editText = findAViewById[EditText, Dialog](dialog, R.id.bus_stop_dialog_input).get
     cancel = buttonById(dialog, R.id.dialog_cancel).get
     cancel.setOnClickListener(onCancelClickListener)
@@ -52,12 +53,17 @@ class BusStopNameFragment extends DialogFragment with LogTag {
     dialog
   }
 
+  private def clearText = editText.getText.clear()
+
   val onCancelClickListener = new OnClickListener {
-    override def onClick(p1: View): Unit = dismiss()
+    override def onClick(p1: View): Unit = {
+      clearText
+      dismiss()
+    }
   }
 
   val onClearClickListener = new OnClickListener {
-    override def onClick(p1: View): Unit = editText.getText.clear()
+    override def onClick(p1: View): Unit = clearText
   }
 
   val onSearchClickListener = new OnClickListener {

@@ -4,6 +4,17 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
         >
+    <TextView
+            android:id="@+id/search_route_message"
+            android:text="@string/search_route_box_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"/>
+    <EditText
+            android:id="@+id/search_route_keyword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"/>
     <ListView
         android:id="@+id/route_list"
         android:layout_width="match_parent"

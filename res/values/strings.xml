@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">京急バス時刻表</string>
+    <string name="hikoushiki">(非公式)</string>
+    <string name="empty"></string>
 
-    <!-- メニュー ダイアログ -->
+    <!-- メニュー バス停から探すダイアログ -->
     <string name="bus_stop_dialog_message">探すバス停の名前を入力してください</string>
     <string name="dialog_clear">クリア</string>
+
+    <!-- メニュー 履歴から探すダイアログ -->
+    <string name="history_label">履歴</string>
+
+    <!-- 路線から探す -->
+    <string name="search_route_box_message">路線名で絞り込みができます</string>
+    <string name="terminal_is">終点：%1$s</string>
+
+    <!-- バス停から探す -->
+    <string name="search_bus_stop_box_message">路線・バス停名で絞り込みができます</string>
+    <string name="no_such_bus_stop">※ キーワードに合うバス停は見つかりませんでした</string>
+    <string name="hint">※ スペースで区切ると複数キーワードで検索できます</string>
 
     <!-- 運行情報タブ -->
     <string name="three_before">３つ前の停留所</string>
@@ -13,7 +27,13 @@
     <string name="will_arrive_at">乗車するバス停に、%1$s 到着予定</string>
     <string name="will_terminal_at">終点に、%1$s 到着予定</string>
     <string name="update">更新</string>
-    <string name="there_is_no_bus">近くを走っているバスはないようですね</string>
+    <string name="there_is_no_bus">近くを走っているバスはないようです</string>
+    <string name="last_update_time">%1$s 更新</string>
+
+    <!-- 地図タブ -->
+    <string name="open_map">バス停の位置を地図で表示</string>
+    <string name="go_to_navi">バス停までのルートを検索</string>
+    <string name="plese_turn_on_gps">※ GPSをオンにしてください！</string>
 
     <!-- DB -->
     <string name="db_path">/data/data/jp.modal.soul.KeikyuTimeTable/databases/</string>

@@ -1,18 +1,15 @@
 package jp.modal.soul.KeikyuTimeTable.model
 
 
-import java.io.{IOException, BufferedReader, FileOutputStream}
+import java.io.{FileOutputStream, IOException}
 
 import android.content.Context
-import android.database.SQLException
-import android.database.sqlite.SQLiteDatabase
-import android.database.sqlite.SQLiteException
-import android.database.sqlite.SQLiteOpenHelper
+import android.database.sqlite.{SQLiteDatabase, SQLiteOpenHelper}
 import android.util.Log
 import jp.modal.soul.KeikyuTimeTable.R
-import jp.modal.soul.KeikyuTimeTable.util.{LogTag, Loan}
+import jp.modal.soul.KeikyuTimeTable.util.{Loan, LogTag}
 
-import scala.util.{Success, Failure, Try}
+import scala.util.{Failure, Try}
 
 /**
  * Created by imae on 2015/05/11.
@@ -40,43 +37,29 @@ case class DBHelper(context:Context) extends SQLiteOpenHelper(context, context.g
    * @return
    */
   def existDatabase = {
-//    var exist = false
-//    for(database <- Loan(openedDatabase().get)) exist = true
-//    exist
-    val exist = openedDatabase().isSuccess
-    if(exist) database.close()
+    var exist = false
+    for(db <- openedDatabase())(exist = true)
     exist
   }
 
   def createEmptyDatabase:Unit = {
     if(!existDatabase) {
       Log.e(TAG, "EMPTY!!")
-      try {
-        getReadableDatabase()
-        copyDatabaseFromAssets
-      } catch {
-        case e:IOException =>
-          Log.e(TAG, s"Error copying atabase. ${e.getMessage}")
+      for(db <- Loan(getReadableDatabase)) {
+        Try(copyDatabaseFromAssets).recover{
+          case e:IOException => Log.e(TAG, s"Error copying atabase. ${e.getMessage}")
+        }
       }
     }
   }
 
   def migration:Option[Int] = {
-    openedDatabase(writable = true) match {
-      case Failure(e) =>
-        Log.e(TAG, s"DB open error. ${e.getMessage}")
-        None
-      case Success(_) =>
-        // TODO 履歴情報の移行
-        try {
-          copyDatabaseFromAssets
-          Option(DBHelper.DB_VERSION)
-        } catch {
-          case e:IOException =>
-            Log.e(TAG, s"Error copying atabase. ${e.getMessage}")
-            None
-        }
-    }
+    (for{
+      db <- openedDatabase(writable = true)
+      version <- Try{copyDatabaseFromAssets;DBHelper.DB_VERSION}.recoverWith{
+        case e:IOException => Log.e(TAG, s"Error copying atabase. ${e.getMessage}"); Failure(e)
+      }
+    } yield ( version )).toOption
   }
 
   @throws(classOf[IOException])
@@ -103,6 +86,10 @@ case class DBHelper(context:Context) extends SQLiteOpenHelper(context, context.g
     Try {
       database = SQLiteDatabase.openDatabase(DB_FULL_PATH, null, if(writable)SQLiteDatabase.OPEN_READWRITE else SQLiteDatabase.OPEN_READONLY)
       database
+    }.recoverWith{
+      case e:Exception =>
+        Log.e(TAG, s"DB open error. ${e.getMessage}")
+        Failure(e)
     }
   }
 

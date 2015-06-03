@@ -5,7 +5,6 @@ import java.util.Date
 import android.app.Fragment
 import android.os.Bundle
 import android.text.format.DateFormat
-import android.util.Log
 import android.view.{LayoutInflater, View, ViewGroup}
 import android.widget.{LinearLayout, ListView}
 import jp.modal.soul.KeikyuTimeTable.R
@@ -44,6 +43,7 @@ abstract class TimeTabFragment extends Fragment with LogTag {
     times.zipWithIndex.find(_._1.startingTime.startsWith(s"$hour:")).foreach{
       case (t,i) => listView.setSelection(i)
     }
+    context.hideLoadingSpinner
   }
 }
 
@@ -54,7 +54,6 @@ class WeekdayTabFragment extends TimeTabFragment {
   override def onCreateView(inflater:LayoutInflater, container:ViewGroup, savedInstanceState:Bundle): View = {
     view = super.onCreateView(inflater, container, savedInstanceState)
     context.weekdayTimes.fold(context.setOnLoadFinished[WeekdayTabFragment](showTimeTable(view)))(showTimeTable(view))
-    context.hideLoadingSpinner
     view
   }
 }
@@ -66,7 +65,6 @@ class SaturdayTabFragment extends TimeTabFragment {
   override def onCreateView(inflater:LayoutInflater, container:ViewGroup, savedInstanceState:Bundle): View = {
     view = super.onCreateView(inflater, container, savedInstanceState)
     context.weekdayTimes.fold(context.setOnLoadFinished[SaturdayTabFragment](showTimeTable(view)))(showTimeTable(view))
-    context.hideLoadingSpinner
     view
   }
 }
@@ -78,7 +76,6 @@ class HolidayTabFragment extends TimeTabFragment {
   override def onCreateView(inflater:LayoutInflater, container:ViewGroup, savedInstanceState:Bundle): View = {
     view = super.onCreateView(inflater, container, savedInstanceState)
     context.weekdayTimes.fold(context.setOnLoadFinished[HolidayTabFragment](showTimeTable(view)))(showTimeTable(view))
-    context.hideLoadingSpinner
     view
   }
 }

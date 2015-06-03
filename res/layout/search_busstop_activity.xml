@@ -4,6 +4,23 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
         >
+    <TextView
+            android:id="@+id/search_bus_stop_message"
+            android:text="@string/search_bus_stop_box_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"/>
+    <EditText
+            android:id="@+id/search_bus_stop_keyword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"/>
+    <TextView
+            android:id="@+id/no_such_bus_stop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@color/sub_blue"/>
     <ListView
             android:id="@+id/busstop_list"
             android:layout_width="match_parent"

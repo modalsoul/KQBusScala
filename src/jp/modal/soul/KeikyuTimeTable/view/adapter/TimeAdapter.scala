@@ -1,13 +1,12 @@
 package jp.modal.soul.KeikyuTimeTable.view.adapter
 
 import android.content.Context
-import android.util.Log
-import android.view.{LayoutInflater, ViewGroup, View}
-import android.widget.{TextView, BaseAdapter}
+import android.view.{LayoutInflater, View, ViewGroup}
+import android.widget.{BaseAdapter, TextView}
 import jp.modal.soul.KeikyuTimeTable.R
+import jp.modal.soul.KeikyuTimeTable.model.entity.Time
 import jp.modal.soul.KeikyuTimeTable.util.LogTag
 import jp.modal.soul.KeikyuTimeTable.view._
-import jp.modal.soul.KeikyuTimeTable.model.entity.Time
 
 /**
  * Created by imae on 2015/05/16.

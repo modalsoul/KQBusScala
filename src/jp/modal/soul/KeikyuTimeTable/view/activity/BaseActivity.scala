@@ -1,15 +1,14 @@
 package jp.modal.soul.KeikyuTimeTable.view.activity
 
-import android.app.{ActionBar, Dialog, Activity}
+import android.app.{ActionBar, Activity, Dialog}
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
-import android.util.Log
-import android.view.{WindowManager, Window, View}
+import android.view.{MenuItem, View, Window, WindowManager}
 import android.widget.{Button, TextView}
-import jp.modal.soul.KeikyuTimeTable.{view, R}
-import jp.modal.soul.KeikyuTimeTable.util.{LogTag, Const}
+import jp.modal.soul.KeikyuTimeTable.util.LogTag
 import jp.modal.soul.KeikyuTimeTable.view._
+import jp.modal.soul.KeikyuTimeTable.{R, view}
 
 import scala.reflect.ClassTag
 
@@ -18,32 +17,44 @@ import scala.reflect.ClassTag
  */
 class BaseActivity extends Activity with LogTag {
   implicit val context = this
+  private[this] var showHomeAsUp:Boolean = true
   var dialog:Dialog = null
-
   var actionBar:ActionBar = null
+  var title:Option[TextView] = None
+  var kari:Option[TextView] = None
 
   override def onCreate(bundle: Bundle): Unit = {
     super.onCreate(bundle)
 
     actionBar = getActionBar
-
-    val titleId = getResources.getIdentifier("action_bar_title", "id", "android")
-
-    val title = findMyViewById[TextView](titleId).map(viewWithFont(_)).get
-    title.setTextSize(Const.TITLE_FONT_SIZE)
-    title.setTextColor(R.color.main_white)
-
-
-//    actionBar.setDisplayShowCustomEnabled(true)
-//    actionBar.setDisplayShowTitleEnabled(true)
-//
-//    val inflator = LayoutInflater.from(this)
-//    val view = inflator.inflate(R.layout.action_bar, null)
-//    view.findViewById(R.id.title_string)
-//    findAViewById[TextView, View](view, R.id.title_string).map(viewWithFont)
-//
-//    actionBar.setCustomView(view)
+    actionBar.setDisplayShowTitleEnabled(false)
+    actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM, ActionBar.DISPLAY_SHOW_CUSTOM)
+    actionBar.setCustomView(R.layout.action_bar)
+    val customView = actionBar.getCustomView
+    title = textById(customView, R.id.title_string)
+    kari = textById(customView, R.id.kari)
   }
+
+  def setTitle(str:String): Unit = {
+    title.foreach(_.setText(str))
+    kari.foreach(_.setVisibility(View.GONE))
+  }
+
+  override def onStart(): Unit ={
+    super.onStart()
+    actionBar.setDisplayHomeAsUpEnabled(showHomeAsUp)
+  }
+
+  override def onOptionsItemSelected(item:MenuItem): Boolean = {
+    item.getItemId match {
+      case android.R.id.home => finish()
+      case _ =>
+    }
+    super.onOptionsItemSelected(item)
+  }
+
+  def disableHomeAsUp = showHomeAsUp = false
+
 
   /**
    * 指定IDに該当するT型のViewを返す
@@ -57,13 +68,10 @@ class BaseActivity extends Activity with LogTag {
    * 指定IDのTextViewをフォント設定済みの状態で返す
    */
   lazy val textViewById:Int => Option[TextView] = (id:Int) => view.textById(this, id)
-//  lazy val textViewById:Int => Option[TextView] = (id:Int) => findMyViewById[TextView](id).map(viewWithFont(_))
   /**
    * 指定IDに該当するButtonをフォント設定済みの状態で返す
    */
   lazy val buttonById:Int => Option[Button] = (id:Int) => view.buttonById(this, id)
-//  lazy val buttonById:Int => Option[Button] = (id:Int) => findMyViewById[Button](id).map(viewWithFont(_))
-
 
   def intentValue[T](key:String)(implicit c:ClassTag[T]):T = {
     val extras = getIntent.getExtras()

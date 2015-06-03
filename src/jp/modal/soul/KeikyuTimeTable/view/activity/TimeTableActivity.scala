@@ -2,8 +2,8 @@ package jp.modal.soul.KeikyuTimeTable.view.activity
 
 import java.util.Calendar
 
-import android.app.ActionBar
 import android.app.LoaderManager.LoaderCallbacks
+import android.app.{ActionBar, Fragment}
 import android.content.Loader
 import android.os.Bundle
 import jp.modal.soul.KeikyuTimeTable.R
@@ -35,10 +35,9 @@ class TimeTableActivity extends BaseActivity with LoaderCallbacks[TimeTableItem]
   var holidayListener:Option[Seq[Time] => Unit] = None
 
   var trafficListener:Option[(Route, BusStop) => Unit] = None
+  var mapListener:Option[BusStop => Unit] = None
 
-//  var actionBar:ActionBar = null
-
-  def setOnLoadFinished[T](listener:Seq[Time] => Unit)(implicit c:ClassTag[T]): Unit = {
+  def setOnLoadFinished[T<:Fragment](listener:Seq[Time] => Unit)(implicit c:ClassTag[T]): Unit = {
     import scala.reflect._
     if(c == classTag[WeekdayTabFragment]) weekdayListener = Option(listener)
     else if(c == classTag[SaturdayTabFragment]) saturdayListener = Option(listener)
@@ -50,6 +49,10 @@ class TimeTableActivity extends BaseActivity with LoaderCallbacks[TimeTableItem]
 //    }
   }
 
+  def setOnLoadFinishedForMap(listener:BusStop => Unit): Unit ={
+    this.mapListener = Option(listener)
+  }
+
   def setOnRouteBusStopLoadFinished(listener:(Route, BusStop) => Unit): Unit = {
     trafficListener = Option(listener)
   }
@@ -58,12 +61,8 @@ class TimeTableActivity extends BaseActivity with LoaderCallbacks[TimeTableItem]
     super.onCreate(bundle)
     setContentView(R.layout.time_table_activity)
 
-    showLoadingSpinner
-
     routeId = intentValue[Long](Route.ROUTE_ID_KEY)
     busStopId = intentValue[Long](BusStop.BUS_STOP_ID_KEY)
-
-    actionBar = getActionBar
 
     getLoaderManager.initLoader(0, null, TimeTableActivity.this)
   }
@@ -87,6 +86,15 @@ class TimeTableActivity extends BaseActivity with LoaderCallbacks[TimeTableItem]
       actionBar.addTab(actionBar.newTab().setText("運行情報").setTabListener(
         new BusStopTabListener[TrafficTabFragment](this, "traffictab", classOf[TrafficTabFragment])
       ))
+
+      actionBar.addTab(actionBar.newTab().setText("地図").setTabListener(
+        new BusStopTabListener[MapTabFragment](this, "maptab", classOf[MapTabFragment])
+      ))
+    }
+    Calendar.getInstance().get(Calendar.DAY_OF_WEEK) match {
+      case Calendar.SATURDAY => actionBar.selectTab(actionBar.getTabAt(1))
+      case Calendar.SUNDAY => actionBar.selectTab(actionBar.getTabAt(2))
+      case _ =>
     }
   }
 
@@ -116,13 +124,7 @@ class TimeTableActivity extends BaseActivity with LoaderCallbacks[TimeTableItem]
     holidayListener.foreach(_(holidayTimes.get))
 
     trafficListener.foreach(_(route, busStop))
-
-    Calendar.getInstance().get(Calendar.DAY_OF_WEEK) match {
-      case Calendar.SATURDAY => actionBar.selectTab(actionBar.getTabAt(1))
-      case Calendar.SUNDAY => actionBar.selectTab(actionBar.getTabAt(2))
-      case _ =>
-    }
-    hideLoadingSpinner
+    mapListener.foreach(_(busStop))
   }
 
 }

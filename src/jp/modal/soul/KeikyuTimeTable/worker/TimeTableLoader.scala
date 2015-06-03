@@ -9,12 +9,13 @@ import jp.modal.soul.KeikyuTimeTable.view.adapter.time.TimeTableItem
  */
 case class TimeTableLoader(context:Context, routeId:Long, busStopId:Long) extends AsyncTaskLoader[TimeTableItem](context) {
   override def loadInBackground(): TimeTableItem = {
-    val route = RouteDao(context).routeById(routeId).get
-    val busStop = BusStopDao(context).busStopById(busStopId).get
     val timeDao = TimeDao(context)
-    val weekday = timeDao.weekDayTimes(routeId, busStopId)
-    val saturday = timeDao.saturdayTimes(routeId, busStopId)
-    val holiday = timeDao.holidayTimes(routeId, busStopId)
-    TimeTableItem(route, busStop, weekday, saturday, holiday)
+    TimeTableItem(
+      route = RouteDao(context).routeById(routeId).get,
+      busStop = BusStopDao(context).busStopById(busStopId).get,
+      weekday = timeDao.weekDayTimes(routeId, busStopId),
+      saturday = timeDao.saturdayTimes(routeId, busStopId),
+      holiday = timeDao.holidayTimes(routeId, busStopId)
+    )
   }
 }

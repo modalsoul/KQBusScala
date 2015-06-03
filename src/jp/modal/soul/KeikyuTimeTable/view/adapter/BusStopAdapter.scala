@@ -3,7 +3,8 @@ package jp.modal.soul.KeikyuTimeTable.view.adapter
 import android.content.{Intent, Context}
 import android.view.View.OnClickListener
 import android.view.{LayoutInflater, View, ViewGroup}
-import android.widget.{BaseAdapter, TextView, Toast}
+import android.widget.Filter.FilterResults
+import android.widget._
 import jp.modal.soul.KeikyuTimeTable.R
 import jp.modal.soul.KeikyuTimeTable.model.entity.{Route, BusStop}
 import jp.modal.soul.KeikyuTimeTable.view._
@@ -12,7 +13,8 @@ import jp.modal.soul.KeikyuTimeTable.view.activity.TimeTableActivity
 /**
  * Created by imae on 2015/05/16.
  */
-case class BusStopAdapter(busStops:Seq[BusStop], needRouteName:Boolean = false)(implicit context:Context) extends BaseAdapter {
+case class BusStopAdapter(busStops:Seq[BusStop], needRouteName:Boolean = false)(implicit context:Context) extends BaseAdapter with Filterable {
+  private[this] var filtered = busStops
   private[this] final val inflater = LayoutInflater.from(context)
 
   def onBusStopClickListener(busStopId:Long, routeId:Long) = new OnClickListener {
@@ -24,12 +26,12 @@ case class BusStopAdapter(busStops:Seq[BusStop], needRouteName:Boolean = false)(
     }
   }
 
-  override def getCount: Int = busStops.length
+  override def getCount: Int = filtered.length
 
-  override def getItemId(position: Int): Long = busStops(position).id
+  override def getItemId(position: Int): Long = filtered(position).id
 
   override def getView(position: Int, convertView: View, parent: ViewGroup): View = {
-    val busStop = busStops(position)
+    val busStop = filtered(position)
     Option(convertView).fold {
       val newConvertView:View = if(needRouteName) {
         inflater.inflate(R.layout.search_busstop_row, null)
@@ -58,11 +60,32 @@ case class BusStopAdapter(busStops:Seq[BusStop], needRouteName:Boolean = false)(
     }
   }
 
-  override def getItem(position: Int): AnyRef = busStops(position)
+  override def getItem(position: Int): AnyRef = filtered(position)
 
   case class ViewHolder(var busStopName:TextView, var routeName:TextView)
 
   object Holder {
     var viewHolder:ViewHolder = ViewHolder(null, null)
+  }
+
+  override def getFilter: Filter = BusStopFilter()
+
+  case class BusStopFilter() extends Filter {
+    override def performFiltering(constraint: CharSequence): FilterResults = {
+      val results = new FilterResults()
+      val keywords = constraint.toString.replace("　", " ").split(" ")
+      val filtered = busStops.filter{
+        busStop =>
+          keywords.forall(busStop.name.contains) || keywords.forall(busStop.routeName.get.contains)
+      }
+      results.count = filtered.length
+      results.values = filtered
+      results
+    }
+
+    override def publishResults(constraint: CharSequence, results: FilterResults): Unit = {
+      filtered = results.values.asInstanceOf[Seq[BusStop]]
+      notifyDataSetChanged()
+    }
   }
 }

@@ -17,3 +17,5 @@ proguard/
 .gradle
 app/build/
 .DS_Store
+.keystore
+target/

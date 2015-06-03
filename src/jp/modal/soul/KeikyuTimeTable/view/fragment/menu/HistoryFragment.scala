@@ -1,17 +1,13 @@
 package jp.modal.soul.KeikyuTimeTable.view.fragment.menu
 
 import android.app.{Dialog, DialogFragment}
-import android.content.{Context, Intent}
 import android.os.Bundle
-import android.util.Log
-import android.view.View.OnClickListener
-import android.view.{View, WindowManager, Window}
-import android.widget.{ArrayAdapter, ListView, LinearLayout}
+import android.view.{Window, WindowManager}
+import android.widget.ListView
 import jp.modal.soul.KeikyuTimeTable.R
-import jp.modal.soul.KeikyuTimeTable.view._
-import jp.modal.soul.KeikyuTimeTable.model.entity.{BusStop, Route, HistoryPreference}
+import jp.modal.soul.KeikyuTimeTable.model.entity.HistoryPreference
 import jp.modal.soul.KeikyuTimeTable.util.LogTag
-import jp.modal.soul.KeikyuTimeTable.view.activity.TimeTableActivity
+import jp.modal.soul.KeikyuTimeTable.view._
 import jp.modal.soul.KeikyuTimeTable.view.adapter.HistoryAdapter
 
 /**

@@ -4,7 +4,7 @@
 		module="kqbusscala_2.11"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20150527194837"
+		publication="20150601233532"
 	>
 		<description>
 		kqbusscala
@@ -27,7 +27,8 @@
 	</configurations>
 	<publications>
 		<artifact name="kqbusscala_2.11" type="pom" ext="pom" conf="pom"/>
-		<artifact name="kqbusscala_2.11" type="jar" ext="jar" conf="optional" e:classifier="download"/>
+		<artifact name="kqbusscala_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		<artifact name="kqbusscala_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 	</publications>
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.6" conf="scala-tool->default,optional(default)"/>

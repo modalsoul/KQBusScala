@@ -25,5 +25,7 @@ case class BusStopTabListener[T<:Fragment](activity:TimeTableActivity, tag:Strin
     activity.showLoadingSpinner
   }
 
-  def onTabReselected(tab:ActionBar.Tab, ft:FragmentTransaction): Unit = {}
+  def onTabReselected(tab:ActionBar.Tab, ft:FragmentTransaction): Unit = {
+    if(tab == activity.actionBar.getTabAt(3)) fragment.asInstanceOf[TrafficTabFragment].reload
+  }
 }

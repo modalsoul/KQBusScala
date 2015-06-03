@@ -54,7 +54,7 @@ case class MenuGridItems(implicit context:MenuActivity) extends LogTag {
   }
 
   val histories = HistoryPreference.get
-  val historyColors = Iterator(R.drawable.flat_panel_black, R.drawable.flat_panel_red, R.drawable.flat_panel_green, R.drawable.flat_panel_blue, R.drawable.flat_panel_white)
+  val historyColors = Iterator(R.drawable.flat_panel_black, R.drawable.flat_panel_red, R.drawable.flat_panel_green, R.drawable.flat_panel_blue, R.drawable.flat_panel_white, R.drawable.flat_panel_black)
 
   def toMenuItem(history:History):MenuItem = {
     MenuItem(s"${history.routeName}\n${history.busStopName}",

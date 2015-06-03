@@ -3,7 +3,6 @@ package jp.modal.soul.KeikyuTimeTable.view.activity
 import android.app.LoaderManager.LoaderCallbacks
 import android.content.Loader
 import android.os.Bundle
-import android.util.Log
 import android.widget.ListView
 import jp.modal.soul.KeikyuTimeTable.R
 import jp.modal.soul.KeikyuTimeTable.model.entity.{BusStop, Route}
